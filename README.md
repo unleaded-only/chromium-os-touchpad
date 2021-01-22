@@ -28,12 +28,12 @@ Or, if your Chromium OS is in developer mode, you can access shell through:
  * Enter `shell` in "crosh". If you get an error message, it is likely because the Chromium OS is not in developer mode.
 
 Now you need to become a root user:
- * `sudu su`
+ * `sudo su`
  * Enter the above password again.
 
 Run the following as root user:
 
-    wget -qO- http://goo.gl/1VWycc | sh
+    wget -qO- https://bit.ly/2KCB1Ee | sh
 
 Then reboot, and enjoy your touchpad.
 
