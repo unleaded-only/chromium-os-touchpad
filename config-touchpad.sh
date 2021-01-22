@@ -1,7 +1,7 @@
 #!/bin/sh
 
-CONFIG_FILE=$(echo /etc/X11/xorg.conf.d/??-touchpad-cmt.conf)
-test -f $CONFIG_FILE || CONFIG_FILE="/etc/X11/xorg.conf.d/40-touchpad-cmt.conf"
+CONFIG_FILE=$(echo /etc/gesture/xorg.conf.d/??-touchpad-cmt.conf)
+test -f $CONFIG_FILE || CONFIG_FILE="/etc/gesture/xorg.conf.d/40-touchpad-cmt.conf"
 
 # Check which type of touchpad is present.
 if grep -qi synaptics /proc/bus/input/devices; then
