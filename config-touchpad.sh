@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CONFIG_FILE=$(echo /etc/gesture/xorg.conf.d/??-touchpad-cmt.conf)
+CONFIG_FILE=$(echo /etc/gesture/??-touchpad-cmt.conf)
 test -f $CONFIG_FILE || CONFIG_FILE="/etc/gesture/40-touchpad-cmt.conf"
 
 # Check which type of touchpad is present.
