@@ -23,10 +23,6 @@ set -e
 echo "Mounting the rootfs as read-write..."
 mount -o remount,rw /
 
-if [ ! -e "$CONFIG_FILE.bak" ]; then
-  echo "Creating backup for $CONFIG_FILE..."
-  cp $CONFIG_FILE $CONFIG_FILE.bak
-fi
 
 echo "Downloading the configuration file for your touchpad..."
 wget -qO $CONFIG_FILE https://raw.github.com/zhaostu/chromium-os-touchpad/master/$TOUCHPAD.xorg.conf
